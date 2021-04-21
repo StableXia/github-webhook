@@ -11,6 +11,7 @@ const app = http.createServer((req, res) => {
 });
 
 handler.on("push", (event) => {
+  console.log(event);
   console.log(event.payload.repository.name);
 });
 
